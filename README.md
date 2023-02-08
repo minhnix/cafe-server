@@ -1,7 +1,7 @@
 # CAFE SERVER
 
 # Config mysql db
-------------------
+-----------------
 Follow this steps.
 
 * docker volume create mysql_data
@@ -10,6 +10,7 @@ Follow this steps.
 * docker run -it --rm -d -v mysql_data:/var/lib/mysql -v mysql_config:/etc/mysql/conf.d --network mysqlnet --name mysqldb -e MYSQL_USER=cafe -e MYSQL_PASSWORD=cafe -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=cafe -p 3309:3309 mysql:8.0
 
 # Run mysql db
+-----------------
 * docker exec -ti mysqldb mysql -u root -p
 
 # Run images
